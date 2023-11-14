@@ -75,7 +75,7 @@ export default function Home() {
         </div>
     </section>
       <div className="bg-[#092555] border-y-2 border-[#ff4b00] text-[#f8f8f8] md:p-4 text-center">
-        <h1 className="h1">What\'s new?</h1>
+        <h1 className="h1">Whats new?</h1>
         <NewCard id="launch" title="JTF Launch" desc="Blag jjjj"/>
         <NewCard id="award" title="Women in STEM Award" desc="woamnf jjjj"/>
         <NewCard id="inaug" title="STEM Lab Inaugration" desc="iyifxcj jjjj"/>
