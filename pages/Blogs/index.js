@@ -13,7 +13,7 @@ function Blogs() {
         space-y-2">
         {
           blogsData?.map((b)=>(
-            <BlogCard id={b.id} items={b} />
+            <BlogCard key={b.id} id={b.id} items={b} />
           ))
         }
       </section>
