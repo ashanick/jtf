@@ -23,15 +23,15 @@ function IndivBlog(props) {
             <div>
                 <div className="space-y-6 px-4 md:px-24 lg:px-40 xl:px-60">
                     {
-                        blog.dbdesc?.map((m)=>(
-                            <p>{m}</p>
+                        blog.dbdesc?.map((m, index)=>(
+                            <p id={index}>{m}</p>
                         ))
                     }
                 </div>
                 <div className="space-y-1 px-4 md:px-24 lg:px-40 xl:px-60">
                     {
-                        blog.singledesc?.map((s)=>(
-                            <p>{s}</p>
+                        blog.singledesc?.map((s, index)=>(
+                            <p id={index}>{s}</p>
                         ))
                     }
                 </div>

@@ -1,5 +1,6 @@
 import {useRouter} from "next/dist/client/router"
 import Image from 'next/image'
+import Link from 'next/link'
 import { useState } from 'react';
 import {  AtSymbolIcon, BookOpenIcon, Cog8ToothIcon, HandRaisedIcon, UsersIcon  } from '@heroicons/react/24/solid'
 
@@ -55,13 +56,13 @@ function Header() {
                     }`}>
                     <ul className="absolute z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow ">
                         <li>
-                            <a href="/OurStory" className="block py-2 px-4 hover:bg-gray-100">Inspire</a>
+                            <Link href="/OurStory" className="block py-2 px-4 hover:bg-gray-100">Inspire</Link>
                         </li>
                         <li>
-                            <a href="/Contact" className="block py-2 px-4 hover:bg-gray-100">Nurture</a>
+                            <Link href="/Contact" className="block py-2 px-4 hover:bg-gray-100">Nurture</Link>
                         </li>
                         <li>
-                            <a href="/Blogs" className="block py-2 px-4 hover:bg-gray-100">Mentor</a>
+                            <Link href="/Blogs" className="block py-2 px-4 hover:bg-gray-100">Mentor</Link>
                         </li>
                     </ul>
                 </div>
@@ -95,16 +96,16 @@ function Header() {
                     }`}>
                     <ul className="absolute z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow ">
                         <li>
-                            <a href="/AboutUs/Team" className="block py-2 px-4 hover:bg-gray-100">Our Team</a>
+                            <Link href="/AboutUs/Team" className="block py-2 px-4 hover:bg-gray-100">Our Team</Link>
                         </li>
                         <li>
-                            <a href="/Contact" className="block py-2 px-4 hover:bg-gray-100">Donor Circle</a>
+                            <Link href="/Contact" className="block py-2 px-4 hover:bg-gray-100">Donor Circle</Link>
                         </li>
                         <li>
-                            <a href="/Blogs" className="block py-2 px-4 hover:bg-gray-100">Partners</a>
+                            <Link href="/Blogs" className="block py-2 px-4 hover:bg-gray-100">Partners</Link>
                         </li>
                         <li>
-                            <a href="/Blogs" className="block py-2 px-4 hover:bg-gray-100">Impact Reports</a>
+                            <Link href="/Blogs" className="block py-2 px-4 hover:bg-gray-100">Impact Reports</Link>
                         </li>
                     </ul>
                 </div>
