@@ -37,3 +37,7 @@
 .titleclass{
     @apply text-xl md:text-2xl lg:text-6xl font-light
 }
+
+.titlep{
+    @apply text-sm md:text-xl lg:text-2xl
+}

@@ -6,9 +6,12 @@ import {  AtSymbolIcon, BookOpenIcon, Cog8ToothIcon, HandRaisedIcon, UsersIcon  
 function Header() {
     const router = useRouter()
     const [isOpen, setOpen] = useState(false);
+    const [isOpen1, setOpen1] = useState(false);
 
-    const handleDropDown = () => {
-      setOpen(!isOpen);
+    const handleDropDown = (e) => {
+        console.log('Handle', e.target.id)
+        if (e.target.id === "whatwedo") {setOpen(!isOpen);}
+        if (e.target.id === "aboutus") {setOpen1(!isOpen1);}    
     };
 
   return (
@@ -32,7 +35,8 @@ function Header() {
             <div className="dropdown">
                 <button
                     className="menu hover:underline  rounded-lg  text-center inline-flex items-center"
-                    onClick={handleDropDown}>
+                    id="whatwedo"
+                    onClick={(e)=>handleDropDown(e)}>
                     <HandRaisedIcon className="hidden md:block text-#092555] pt-1 font-bold h-6 lg:h-6"></HandRaisedIcon>
                     What We Do
                     <svg
@@ -71,6 +75,7 @@ function Header() {
             <div className="dropdown">
                 <button
                     className="menu hover:underline  rounded-lg  text-center inline-flex items-center"
+                    id="aboutus"
                     onClick={handleDropDown}>
                     <UsersIcon className="hidden md:block text-#092555] pt-1 font-bold h-6 lg:h-6"></UsersIcon>
                     About Us
@@ -86,11 +91,11 @@ function Header() {
                 <div
                     id="dropdowna"
                     className={`z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow ${
-                    isOpen ? "block" : "hidden"
+                    isOpen1 ? "block" : "hidden"
                     }`}>
                     <ul className="absolute z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow ">
                         <li>
-                            <a href="/OurStory" className="block py-2 px-4 hover:bg-gray-100">Our Team</a>
+                            <a href="/AboutUs/Team" className="block py-2 px-4 hover:bg-gray-100">Our Team</a>
                         </li>
                         <li>
                             <a href="/Contact" className="block py-2 px-4 hover:bg-gray-100">Donor Circle</a>
