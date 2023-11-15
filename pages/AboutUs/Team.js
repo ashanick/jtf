@@ -10,7 +10,7 @@ function Team() {
         <section className="text-center p-4 md:p-10 lg:p-20 ">
             <h1 className="h1">Foundation Board of Directors</h1>
             <div className="flex justify-between space-x-6 allignx">
-                <div>Tony Thomas</div>
+                <div>Tony Thomas Brother</div>
                 <div>Priya Pattathil</div>
                 <div>Shyam Pillalamari</div>
             </div>
