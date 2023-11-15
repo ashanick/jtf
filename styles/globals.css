@@ -35,5 +35,5 @@
 }
 
 .titleclass{
-    @apply text-xl md:text-2xl lg:text-3xl font-light
+    @apply text-xl md:text-2xl lg:text-6xl font-light
 }

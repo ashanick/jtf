@@ -7,7 +7,7 @@ import EngageCard from "@/components/Cards/EngageCard";
 export default function Home() {
   return (
     <>
-      <div className="bg-[#092555] text-[#f8f8f8]">
+      <section className="bg-[#092555] text-[#f8f8f8]">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className="m-auto text-center space-y-4 md:space-y-8 pt-4 pb-4">
             <div className="space-y-1 allignx ">
@@ -26,7 +26,7 @@ export default function Home() {
               <p className="text-sm lg-text-xl">Alumii mentors & Partnering with Foundation for Excellence</p>
             </div>
           </div>
-          <div className="hidden md:block relative w-[50vw] h-[40vw] ">
+          <div className="hidden md:block relative w-[49vw] h-[40vw] ">
             <Image 
                 src="/images/home-image1.webp"
                 alt="Asha"
@@ -37,15 +37,29 @@ export default function Home() {
         <div className="bg-[#092555] text-[#f8f8f8] border-y-2 border-[#ff4b00] p-2">
           <h3 className="h2 py-4 text-center">To uplift underserved students and their families through impactful STEM careers</h3>
         </div>
-      </div>
+      </section>
+              {/* <div className=" grid grid-cols-1 space-y-4 lg:grid-cols-[500px_minmax(860px,_1fr)_1fr] "> */}
 
-      <div className="border-y-1 border-[#ff4b00] allignx py-2 md:py-8 space-x-8">
-        <h2 className="h2 text-[#092555] text-center">We are a core group of 25 members, a dedicated volunteer network of 100+ and a global network.</h2>
-        <div className=" grid grid-cols-1 space-y-4 lg:grid-cols-[500px_minmax(860px,_1fr)_1fr] ">
-          <div className="m-auto text-center">
-            <p className="text-3xl font-light text-[#ff4b00]">Our core mission is to inspire STEM students and young professionals across the globe to excel and realize their full potential.</p>
-          </div>
-          <div className="text-xl">
+      <section className="border-y-1 border-[#ff4b00] allignx py-2 md:py-8 space-x-8">
+        <h1 className="titleclass text-center pb-6">The Joy Thomas Foundation</h1>
+        <div className="allignx text-center pb-4">
+          <p className="text-3xl font-light text-[#ff4b00]">Our core mission is to inspire STEM students and young professionals across the globe to excel and realize their full potential.</p>
+        </div>
+        <p className="font-light allignx text-lg md:text-xl lg:text-2xl">The Joy Thomas Foundation brings together a global network of 
+        STEM mentors, who are dedicated to inspiring the next generation 
+        of STEM students, researchers and entrepreneurs. We seek and build relationships with individuals and corporations who are making a difference 
+          in their communities and countries. The Foundation sponsors awards to promote STEM excellence, 
+          offers mentoring, career guidance and employment assistance to college STEM students. Our High School STEM programs seek to 
+          inspire students from disadvantaged backgrounds to pursue STEM 
+          related careers, to secure higher paying jobs that benefit their families.</p>
+      </section>
+      <section className=" mx-auto h-[1000px] max-w-[100vw] bg-[#092555]
+        bg-cover bg-fixed bg-center bg-no-repeat shadow-lg bg-[url(/images/Joy.webp)]"
+        >
+        <div className="pt-[60vh] md:pt-[82vh] ">
+          <div className="bg-white p-4 md:p-8 py-12">
+              <h1 className="h1 text-center">We’re Inspired by the Life and Legacy of Joy Thomas</h1>
+              <div className="text-xl lg:mx-28">
             The Foundation was created in 2020 to honor the life and legacy of 
             <Link href="/OurStory" className="text-[#ff4b00] px-1 font-semibold cursor-pointer hover:text-blue-500 hover:underline">Joy Thomas,</Link> 
             an Indian-American STEM genius. As a world-renowned researcher at Stanford University, IBM, 
@@ -53,28 +67,12 @@ export default function Home() {
             Joy made seminal contributions in the field of Information Theory, data analytics, and large-scale data mining. He was passionate 
             about enabling and encouraging young minds in STEM-related disciplines. 
             Joy was an alumnus of IIT, Madras and St. Joseph’s, Bangalore, India.
-            
           </div>
-        </div>
-      </div>
-      <section className=" mx-auto h-[860px] max-w-[100vw] bg-[#092555]
-        bg-cover bg-fixed bg-center bg-no-repeat shadow-lg bg-[url(/images/Joy.webp)]"
-        >
-        <div className="pt-[50vh] md:pt-[54vh] ">
-          <div className="bg-white p-4 sm:p-8 py-12">
-              <h1 className="h1 text-center">We’re Inspired by the Life and Legacy of Joy Thomas</h1>
-              <h2 className="h2 text-center px-6 md:px-10 lg:px-[20vw] text-[#ff4b00]">The Joy Thomas Foundation brings together a global network of 
-              STEM mentors, who are dedicated to inspiring the next generation 
-              of STEM students, researchers and entrepreneurs.</h2>
-              <p className="font-light allignx text-sm md:text-xl lg:text-2xl">We seek and build relationships with individuals and corporations who are making a difference 
-                in their communities and countries. The Foundation sponsors awards to promote STEM excellence, 
-                offers mentoring, career guidance and employment assistance to college STEM students. Our High School STEM programs seek to 
-                inspire students from disadvantaged backgrounds to pursue STEM 
-                related careers, to secure higher paying jobs that benefit their families.</p>
+             
           </div>
         </div>
     </section>
-      <div className="bg-[#092555] border-y-2 border-[#ff4b00] text-[#f8f8f8] md:p-4 text-center">
+      <div className="bg-[#092555] border-y-2 border-[#ff4b00] text-[#f8f8f8] p-4 md:p-8 text-center">
         <h1 className="h1">Whats new?</h1>
         <NewCard id="launch" title="JTF Launch" desc="Blag jjjj"/>
         <NewCard id="award" title="Women in STEM Award" desc="woamnf jjjj"/>
@@ -85,7 +83,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="allignx px-4 md:py-8 lg:py-12">
+      <div className="allignx p-4 md:py-8 lg:py-12 lg:p-8">
         <h1 className="h1 text-center">How can you engage with the foundation?</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 text-center mb-6">
           <div>
@@ -113,26 +111,32 @@ export default function Home() {
               href="/OurStory">Learn More</Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center py-12 bg-[#f5f5f5]">
-          <div>
-            <div className="hidden md:block relative w-[22rem] h-[24rem] mx-24">
-                <Image 
-                    src="/images/blue-striped-circle.webp"
-                    alt="Asha"
-                    fill={true}
-                />
-              </div>
-              <div className="hidden md:block relative w-[24rem] h-[40rem] mx-auto -m-64 ">
-                <Image 
-                    src="/images/young-indian-student.webp"
-                    alt="Asha"
-                    fill={true}
-                />
-              </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center  ">
+          <div className="md:py-8">
+            <div className="hidden md:block relative w-[22rem] h-[24rem] mx-auto">
+              <Image 
+                  src="/images/blue-striped-circle.webp"
+                  alt="Asha"
+                  fill={true}
+              />
             </div>
-            <div >
-              <EngageCard id="stemnetwork" title="The STEM Network" />
+            <div className="hidden md:block relative w-[24rem] h-[40rem] -my-64 mx-80 ">
+              <Image 
+                  src="/images/young-indian-student.webp"
+                  alt="Asha"
+                  fill={true}
+              />
             </div>
+            <div className="hidden md:block md:m-[11rem]"></div>
+          </div>
+
+          <div className="space-y-4 mt-6 md:mt-12  pb-6 md:pb-20">
+            <EngageCard id="stemnetwork" title="The STEM Network" />
+            <EngageCard id="award" title="Awards for STEM Excellence" />
+            <EngageCard id="high" title="High School STEM Programs" />
+            <EngageCard id="college" title="College STEM Programs" />
+            <EngageCard id="sponsor" title="Sponsor A STEM Project" />
+          </div>
         </div>
       </div>
       <section className=" mx-auto h-[1000px] max-w-[100vw] bg-[#092555]
