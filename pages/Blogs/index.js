@@ -9,8 +9,8 @@ function Blogs() {
       <div className="h-14 text-center ">
         <h2 className="h2 text-opacity-100">Filter By</h2>
       </div>
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 md:px-16 lg:px-28 xl:px-40 place-items-center
-        space-y-2">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 md:px-16 lg:px-28 xl:px-52 place-items-center
+        space-y-4">
         {
           blogsData?.map((b)=>(
             <BlogCard key={b.id} id={b.id} items={b} />
